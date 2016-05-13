@@ -1,0 +1,6 @@
+db:
+    image: "mysql/mysql-server:${MYSQL_VERSION}"
+    volumes:
+      - /var/lib/mysql:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: "my-secret-pw"
